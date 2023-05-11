@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        body, head{
+            background-image: url("src/milad-fakurian-PGdW_bHDbpI-unsplash.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            color: white;
+            font-family: cursive;
+        }
+        .atcenter{
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 50px;
+            gap: 15px;
+            margin-top: 50px;
+        }
+        h4{
+            font-size: medium;
+            margin: 0;
+            margin-bottom: 5px;
+        }
+        input{
+            align-items: center;
+            width: 300px;
+            height: 30px;
+            border-radius: 5px;
+            border: none;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 5px;
+        }
+        button{
+            width: 200px;
+            height: 45px;
+            border-radius: 5px;
+            border: none;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 5px;
+            margin-top: 10px;
+            margin: 0 auto;
+            font-family: cursive;
+
+        }
+        button:hover{
+            color: black;
+            background-color: gray;
+            cursor: pointer;
+        }
+        .signin{
+            margin-top: 5px;
+            font-size: small;
+            color: white;
+            text-align: center;
+        }
+        .heading{
+            display: flex;
+            flex-direction: column;
+            color: white;
+            font-size: large;
+            font-family: cursive;
+            
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        a{
+            text-decoration: dotted;
+            color: cadetblue;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                background-image: url("src/luke-chesser-3rWagdKBF7U-unsplash.jpg");
+                background-size: cover;
+            }
+        }
+
+    </style>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=0.7">
+        <title>Sign Up</title>
+    </head>
+    <body>
+        <div class="heading">
+        <h1>Sign Up</h1>
+        <div class="atcenter">
+            <form action="/login" method="post">
+                <h4>Username:</h4>
+                <input id="username" type="text" placeholder="Username"><br><br>
+                <h4>Email:</h4>
+                <input id="email" type="text" placeholder="Email"><br><br>
+                <h4>Password:</h4>
+                <input id="password" type="text" placeholder="Password"><br><br>
+                <h4>Confirm Password:</h4>
+                <input id="conpass" type="text" placeholder="Confirm Password">
+                <br><br>
+                <button type="submit">Sign Up!</button>
+                <p class="sigin">Already have an account? <a href="">Sign in</a></p>
+            
+            </form>
+        </div>
+    </div>
+    </body>
+</html>
